@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5576200234695785921}
   - component: {fileID: 3613279176093074415}
   - component: {fileID: 2109481198550189157}
+  - component: {fileID: 4998104762676269922}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: Untagged
@@ -100,7 +101,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.08452988, y: -0.6668756}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -111,7 +112,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 4}
+  m_Size: {x: 1.6518478, y: 2.6662488}
   m_EdgeRadius: 0
 --- !u!82 &3613279176093074415
 AudioSource:
@@ -221,3 +222,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84584fcaceaf0cd479d38ca618ae0d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &4998104762676269922
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523184537940996460}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 085dcfc64dddf7c4896537a90ed83b95, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
