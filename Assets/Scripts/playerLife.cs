@@ -26,6 +26,8 @@ public class playerLife : MonoBehaviour
 
     private void Death()
     {
+        CounterKeeping.counter = 0;
+        //////////////////////////
         deathSource.Play();
         anim.SetTrigger("Death");
         Rigidbody.bodyType = RigidbodyType2D.Static;

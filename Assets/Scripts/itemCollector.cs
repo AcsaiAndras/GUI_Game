@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class itemCollector : MonoBehaviour
 {
-    int pineappleCollected = 0;
-
+    //int pineappleCollected = 0;
+    
     [SerializeField] Text pineappleCounter;
     [SerializeField] AudioSource collectSound;
 
@@ -16,8 +16,10 @@ public class itemCollector : MonoBehaviour
         {
             collectSound.Play();
             Destroy(collision.gameObject);
-            pineappleCollected++;
-            pineappleCounter.text = $"Pineapples: {pineappleCollected}";
+            //pineappleCollected++;
+            CounterKeeping.counter++;
+            //pineappleCounter.text = $"Pineapples: {pineappleCollected}";
+            pineappleCounter.text = $"Pineapples: {CounterKeeping.counter}";
         }
     }
 
