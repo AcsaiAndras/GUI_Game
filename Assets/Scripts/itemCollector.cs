@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class itemCollector : MonoBehaviour
 {
     int pineappleCollected = 0;
+
+    [SerializeField] Text pineappleCounter;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -12,7 +15,7 @@ public class itemCollector : MonoBehaviour
         {
             Destroy(collision.gameObject);
             pineappleCollected++;
-            Debug.Log(pineappleCollected);
+            pineappleCounter.text = $"Pineapples: {pineappleCollected}";
         }
     }
 
