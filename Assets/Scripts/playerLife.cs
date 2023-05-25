@@ -7,7 +7,7 @@ public class playerLife : MonoBehaviour
 {
     Animator anim;
     Rigidbody2D Rigidbody;
-
+    [SerializeField] AudioSource deathSource;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +26,7 @@ public class playerLife : MonoBehaviour
 
     private void Death()
     {
+        deathSource.Play();
         anim.SetTrigger("Death");
         Rigidbody.bodyType = RigidbodyType2D.Static;
     }

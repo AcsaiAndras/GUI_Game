@@ -8,11 +8,13 @@ public class itemCollector : MonoBehaviour
     int pineappleCollected = 0;
 
     [SerializeField] Text pineappleCounter;
+    [SerializeField] AudioSource collectSound;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Pineapple"))
         {
+            collectSound.Play();
             Destroy(collision.gameObject);
             pineappleCollected++;
             pineappleCounter.text = $"Pineapples: {pineappleCollected}";

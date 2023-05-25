@@ -9,6 +9,7 @@ public class playerMovement : MonoBehaviour
 
     Animator anim;
     float dirX = 0f;
+    [SerializeField] AudioSource jumpSound;
     SpriteRenderer sprite;
     [SerializeField] float moveSpeed = 7f;
     [SerializeField] float jumpForce = 16f;
@@ -39,6 +40,7 @@ public class playerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isGrounded())
         {
+            jumpSound.Play();
             rb.velocity = new Vector2(rb.velocity.x,jumpForce);
         }
 
